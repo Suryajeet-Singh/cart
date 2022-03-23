@@ -1,0 +1,9 @@
+h1:only-of-type{
+    color: peru;
+    background-color: purple;
+}
+p:only-child
+{
+    color:orangered;
+    background-color: peachpuff;
+}

@@ -1,0 +1,117 @@
+body{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWh-65XCwsqfo08A4BJvj07uYoYnDzR5PVZmII9mNlRYJHvVFmT5UFEXlTqxEjOxSAM6k&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+h1{
+    font-style: italic;
+    font-size: 36px;
+    padding: 20px;
+    color: honeydew;
+    background: rgb(185,5,16);
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(185,5,16,1) 0%, rgba(2,45,8,1) 0%, rgba(10,144,12,1) 0%, rgba(203,28,237,1) 0%, rgba(196,30,237,1) 0%, rgba(189,32,237,1) 0%, rgba(1,91,241,1) 0%, rgba(189,32,237,1) 100%);
+}
+span{
+    font-size: 28px;
+    padding: 20px;
+    color: honeydew;
+    text-align: center;
+}
+.category_div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgb(185,5,16);
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(185,5,16,1) 0%, rgba(2,45,8,1) 0%, rgba(10,144,12,1) 0%, rgba(203,28,237,1) 0%, rgba(196,30,237,1) 0%, rgba(189,32,237,1) 0%, rgb(1, 193, 241) 0%, #20ed64 100%);    
+}
+input[type=button]{
+    border-radius: 15px;
+    background-color: bisque;
+    font-size: 36px;
+}
+input[type=button]:hover{
+    border-radius: 15px;
+    background-color: rgb(185, 163, 136);
+    font-size: 36px;
+}
+
+.add_btn {
+    background-color: royalblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+}
+
+.add_btn:hover {
+    background-color: #2D9CDB;
+}
+#shop_item {
+    margin: 30px;
+}
+
+.item_title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.item_image {
+    height: 240px;
+    width: 300px;
+    border: 2px solid black;
+}
+
+.item_details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.item_price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.total {
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-align: end;
+    border-radius: 5px;
+    border: 8px double rgb(238, 43, 108);
+    width: fit-content;
+    float: right;
+    background-color: yellowgreen;
+}
+#partition{
+    font-size: 30px;
+    color: rgb(2, 63, 63);
+}
+.total_title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.total_price, .total_product {
+    display: inline;
+    color: rgb(136, 26, 26);
+    font-size: 1.2em;
+}

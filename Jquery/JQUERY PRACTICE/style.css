@@ -1,0 +1,28 @@
+.newClass {
+    font-size: 150%;
+    color: red;
+}
+.newClass2{
+    background-color: blue;
+}
+.siblings * {
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+    .ancestors * {
+        display: block;
+        border: 2px solid lightgrey;
+        color: lightgrey;
+        padding: 5px;
+        margin: 15px;
+    }
+        .descendants * {
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}

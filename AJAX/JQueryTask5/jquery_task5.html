@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery_task5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="jquery_task5.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <button onclick="all_movies()">All</button>
+        <button onclick="add_movie()">Update</button>
+        <button onclick="remove_data()">Delete</button>
+        <button onclick="search_data_file()">Search</button>
+    </div>
+    <div id="form_data">
+        <label for="">Title</label>
+        <input type="text" name="" id="movie_title">
+        <label for="">Year</label>
+        <input type="number" name="" id="movie_year">
+        <label for="">IMDB Rating</label>
+        <input type="number" name="" id="imdb_rating">
+        <label for="">Image</label>
+        <input type="file" name="" id="imgfile" >
+        <button onclick="update_data()">Update</button> <br>
+    </div>
+    <div id="search">
+        <input type="text" name="" id="search_val" placeholder="search">
+    </div>
+
+    <div id="delete">
+        <input type="number" name="" id="del_data" placeholder="S.No.">
+        <button onclick="del()">Delete</button> <br>
+    </div>
+    
+
+    <div id="table_all">
+
+    </div>
+    <div id="search_tbl">
+
+    </div>
+
+    <script src="jquery_task5.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#headerDiv
+{ 
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;
+    align-items: right;
+    justify-content: right;
+    margin-right: 180px;
+
+}
+
+.callButton
+{ 
+    width: 120px;
+
+    padding: 4px;
+    background: transparent;
+    background-color: rgb(29, 54, 196);
+    color: white;
+}
+#task
+{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-around;
+}
+#logoImg
+{
+    height: 120px;
+    width: 120px;
+}
+
+
+#navDiv{
+    padding-top: 75px;
+    margin-left: 200px;
+}
+ a
+{
+    padding-right: 10px;
+    margin-left: 10px;
+   color: #000;
+    text-decoration: none;
+}
+
+#searchButton
+{
+    margin-left: 20px;
+    padding: 2px;
+}
+#searchButton img
+{
+    height: 15px;
+    width: 15px;
+}
+#body1{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/main.jpeg);
+    height: 250px;
+    width: 100%;
+    margin-top: -40px;
+
+
+}
+#body1 > h1,p
+{
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#line > img{
+    display: none;
+}
+#footer 
+{
+    /* margin-top: 5px;
+    display: flex;
+    justify-content: space-between; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#footer img
+{      
+    height: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 29px;
+
+}
+.textBody
+{
+
+    color:blue;
+    text-align: left;
+    word-break: break-all;
+    padding-left: 29px;
+
+}
+
+#cookies{
+   
+    position: sticky;
+    bottom: 0;
+     background-color: rgb(1, 1, 95);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#cookies > p{
+    width: 82%;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+}
+#cookies > img{
+    
+    float:right;
+    padding-right: 15px;
+    height: 25px;
+    width:25px;
+}
+
+
+
+
+
+@media screen and (max-width:884px) {
+    
+    #headerdiv
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .callButton
+    {
+        margin-left: 0;
+        flex: 50%;
+    }
+    
+    #navDiv,#callButton
+
+    {
+        display: none;
+    }
+    #logoImg
+    {
+        margin-right: 250px;
+    }
+
+    #line > img
+    {
+        display: block;
+        height: 20px;
+        width: 20px;
+    
+    }
+    #footer{
+        display: flex;
+        margin-left:0;
+        padding: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        
+
+    }
+    #footer > img
+    {      
+        height: 200px;
+        width:245px;
+        display: flex;
+        flex-direction: row;
+        flex: 50%;
+        
+
+    }
+    .textBody{
+        text-align: left;
+        width: 60%;
+        font-size: 15px;
+        
+    }
+
+
+}

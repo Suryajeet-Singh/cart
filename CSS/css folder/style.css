@@ -1,0 +1,39 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+ul
+{
+    font-size: 2em;
+    color: mediumslateblue;
+    text-decoration: none;
+}
+ul > li
+{
+    display: inline;
+}
+h1,h2
+{
+    color: cadetblue;
+}
+#task
+{
+    color: crimson;
+}
+.xyz
+{
+    color:darksalmon
+}
+div p
+{
+    color:gold;
+}
+h3~p
+{
+    color: saddlebrown;
+}
+div+span
+{
+    color: yellowgreen;
+}

@@ -1,0 +1,29 @@
+a[target]
+{
+    background-color: crimson;
+    
+}
+a[target="_self"]
+{
+    background-color: cyan;
+}
+h1[class~="mytest-top"]
+{
+    /* border: 1px solid black; */
+    background-color: cornflowerblue;
+}
+a[class|="pretest"]
+{
+    background-color: hotpink;
+}
+h2[class$="ap"]{
+background-color: gold;
+}
+p[class*="sec"]
+{
+    background-color: green;
+}
+p[class^="doc"]
+{
+    background-color: indigo;
+}

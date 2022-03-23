@@ -1,0 +1,14 @@
+
+        .divClass{
+            display: inline-block;
+        }
+        #panel, #flip{
+            padding: 5px;
+            text-align: center;
+            background-color: #f5a8de;
+            border:solid 1px #850404;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }

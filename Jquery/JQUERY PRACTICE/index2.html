@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <button id="button1">Add a class name to the first p element</button>
+    <button id="button2">Remove the class name first p element</button>
+    <button id="button3">Does first p element have an "newClass" class?</button>
+    <button id="button4">Toggle class "newClass2" for p element</button>
+    <br>
+    <p class="newPara">This is third paragraph.</p>
+    <p class="newPara">This is fourth paragraph.</p>
+    <br>
+    <button id="button5">Append text</button>
+    <button id="button6">Prepend text</button>
+    <button id="button7">Insert text before paragraph</button>
+    <button id="button8">Insert text after paragraph</button>
+    <button id="button9">Change content of all p element</button>
+    <button id="button10">Change text content for all p element</button>
+    <br>
+    <img src="https://i.pinimg.com/originals/a4/f8/f9/a4f8f91b31d2c63a015ed34ae8c13bbd.jpg" alt="image" width="200"
+        height="400">
+    <br>
+    <button id="button11">Set the width attribute of the image</button>
+    <br>
+    <p>Name: <input type="text" name="user"></p>
+    <button id="button12">Set the value of the input field</button>
+    <br>
+    <div class="descendants">div (great-grandparent)
+        <div style="width:500px;">div (grandparent)
+            <ul>ul (direct parent)
+                <li>li (child)
+                    <span>span (grandchild)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ancestors">div (gerat-grandparent)
+        <div style="width:500px;">div (grandparent)
+            <ul>ul (direct parent)
+                <li>li (child)
+                    <span>span (grandchild)</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div style="width:500px;" class="siblings">
+        <ul>ul (parent)
+            <li>li (the previous sibling of "start")</li>
+            <li>li (the previous sibling of "start")</li>
+            <li class="start">li(sibling)</li>
+            <li>li (the next sibling of "start")</li>
+            <li>li (the next sibling of "start")</li>
+        </ul>
+    </div>
+    <h3 class="siblingFirst">This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <h3 class="siblingsHead">This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <h3>This is 3rd Heading</h3>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("p:first").addClass("newClass");
+            });
+            $("#button2").click(function () {
+                $("p:first").removeClass("newClass");
+            });
+            $("#button3").click(function () {
+                alert($("p").hasClass("newClass"));
+            });
+            $("#button4").click(function () {
+                $("p").toggleClass("newClass2");
+            });
+            $("#button5").click(function () {
+                $(".newPara").append("<b>Append text</b>");
+            });
+            $("#button6").click(function () {
+                $(".newPara").prepend("<b>Prepend text</b>");
+            });
+            $("#button7").click(function () {
+                $(".newPara").before("<b>Before text</b>");
+            });
+            $("#button8").click(function () {
+                $(".newPara").after("<b>After text</b>");
+            });
+            $("#button9").click(function () {
+                $(".newPara").html("Hello <b>Surya</b>");
+            });
+            $("#button10").click(function () {
+                $(".newPara").text("Hello <b>Surya</b>");
+            });
+            $("#button11").click(function () {
+                $("img").attr("width", "800");
+            });
+            $("#button12").click(function () {
+                $("input:text").val("Surya");
+            });
+            $("ul").find("span").css({
+                "color": "green", "border": "2px solid red"
+            });
+            $("ul").children().css({
+                "color": "blue", "border": "2px solid red"
+            });
+            $("li.start").siblings().css({
+                "color": "red", "border": "2px solid red"
+            });
+            $("h3.siblingsHead").nextAll().css({
+                "color": "red", "border": "2px solid green"
+            });
+            $("h3.siblingsHead").prevAll().css({
+                "color": "blue", "border": "2px solid yellow"
+            });
+            $("h3.siblingsHead").prevUntil("h3.siblingFirst").css({
+                "color": "cyan", "border": "2px solid orange"
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>

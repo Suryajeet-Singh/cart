@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textBox</title>
+</head>
+<body>
+    <label for="">textbox1</label><input type="text" >
+    <label for="">textbox2</label> <input type="text" >
+    <label for="">textbox3</label>  <input type="text" >
+    <input type="submit" id='sub' onclick="myfun()">
+    <div id="a"></div>
+
+    <!-- var a  = document.getElementbyId("sub"); -->
+    <script>
+        arr =[];
+    function myfun()
+    {
+      
+      var b =document.getElementsByTagName("input");
+      for(var i =0; i<b.length-1;i++)
+      {
+        //   var d =i;
+        //   var w = b[i].value;
+        //   var f =(d + w);
+           arr.push((b[i].value + i));
+        // arr.push(f);
+    
+      }
+      //printing
+      var u ="";
+      var e= document.getElementById("a");
+      for(var j =0;j<arr.length;j++)
+      {
+       document.write( "<p>" + arr[j] + "</p>");
+       
+      }
+   
+      console.log(arr);
+      e.innerHTML =u;
+    }
+   
+</script>
+</body>
+</html>

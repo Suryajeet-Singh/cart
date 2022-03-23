@@ -1,0 +1,101 @@
+
+body{
+    background-color: rgb(142, 142, 255);
+}
+img {
+    width: 200px;
+}
+#update, #delete, #search {
+    display: none;
+    margin: auto;
+    padding: 10px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-around;
+}
+#navbar > button{
+    width:200px;
+    border:transparent;
+    border-radius: 5px;
+    background-color: rgb(96, 96, 255);
+    height: 50px;
+} 
+ button:focus{
+    border: transparent;
+}
+table, tr, th, td{
+    
+    margin: 10px auto;
+    border: 1px solid rgb(120, 120, 247);
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
+tr {
+    height: 100px;
+}
+th{
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+td{
+    color: rgb(77, 5, 5);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#form_data{
+    margin-top: 50px;
+text-align: center;
+}
+#form_data > input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 200px;
+    border: transparent;
+    height: 20px;
+
+}
+#form_data > input:focus{
+    border: transparent;
+}
+#form_data > label{
+    color: rgb(77, 5, 5);
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#delete > input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 200px;
+    border: transparent;
+    height: 20px;
+}
+#delete > button{
+    display: block;
+    width:100px;
+    margin-left: auto;
+    margin-right: auto;
+    border:transparent;
+    border-radius: 5px;
+    background-color: rgb(88, 88, 255);
+    height: 35px;
+} 
+#search > input{
+    display: block;
+    width:100px;
+    margin-left: auto;
+    margin-right: auto;
+    border:transparent;
+    border-radius: 5px;
+    background-color: rgb(168, 168, 253);
+    height: 35px;
+}
+#search > input:focus{
+    border: transparent;
+}

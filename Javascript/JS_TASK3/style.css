@@ -1,0 +1,37 @@
+marquee{
+    margin-top:5%;
+color: white;
+    font-size: 50px;
+    
+        text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+body
+{
+    background-image: linear-gradient(to right, rgba(255,0,0,0),rgba(255,0,0,1));
+}
+table {
+    margin-top: 10px;
+
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    text-align: center;
+    padding: 10px;
+    background-color:yellow ;
+    border: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+th{
+    padding: 10px;
+    border: 1px solid black;
+}
+td{
+    padding: 10px;
+    border : 1px solid black;
+}
+table:hover{
+  
+
+    box-shadow: 0 4px 8px 0 rgba(11, 3, 87, 0.5), 0 6px 20px 0 rgba(9, 0, 12,0.5);
+
+}
+table tr:hover {background-color: rgb(221, 36, 36);color: white;}

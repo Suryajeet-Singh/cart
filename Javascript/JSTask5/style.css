@@ -1,0 +1,47 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(student.jpg);
+}
+#myText
+{
+    /* display: flex;
+    justify-content: right; */
+    margin-top: 30px;
+    width: 80vw;
+    height: 100px;
+
+    
+}
+#new_Text
+{word-wrap: break-word;
+    word-break: break-all;
+}
+/* #hello-div{
+  width: 50%;
+  text-align: end;
+  position: relative;
+} */
+/* #user-div{
+    width: 50%;
+text-align: start;
+word-wrap: break-word;
+
+} */
+h1{
+  
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+   
+}
+#myTask input
+{
+    border : 1px solid black;
+    justify-content: center;
+    height: 80px;
+    width: 60vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

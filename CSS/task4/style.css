@@ -1,0 +1,73 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    background-color: silver;
+}
+.main{
+    min-height:500px;
+    max-width: 850px;
+    background-color:white;
+    border:5px solid;
+    border-style: double;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+}
+h3{
+    
+    margin: auto;
+   text-align: center;
+   font-weight: bold;
+   color: brown;
+   margin-top: 12px;
+  
+}
+h1{
+    color: brown;
+    font-family: 'Orelega One', cursive;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    margin-top:2px;
+}
+p{
+    text-align: center;
+    color:#5B1405;
+    font-size: 2em;
+    font-family: 'Great Vibes', cursive;
+}
+
+.body{
+    height:50px;
+    width:520px;
+    margin: auto;
+    border-bottom: 1px solid;
+    border-top:2px solid black;
+    text-align: center;
+    
+}
+.body ul li{
+    list-style-type: none;
+    display: inline;
+    padding:5px;
+    
+    
+}
+.body ul li a{
+    text-decoration: none;
+    color:black;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.content{
+    
+    background-color:white;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+#mytask1{
+    color:grey;
+    font-size: 1em;
+
+}

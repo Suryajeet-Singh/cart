@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Poetry Workshops</h1>
+    <p>We will be conducting a number of poetry workshops and symposiums the year.<br>
+        please note that the following events are free to members:
+    </p>
+    <ul>
+        <li>A Poetic Perspective</li>
+        <li>Walt Whitman at War</li>
+        <li>Found Poems and Outsider Poetry</li>
+    </ul>
+    <table id="city">
+        <thead>
+            <tr>
+                <th></th>
+                <th>New York</th>
+                <th>Chicago</th>
+                <th>San Francisco</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>A Poetic Perspective</b></td>
+                <td>Sat,4 Feb 2012 </br>11am-2pm</td>
+                <td>Sat,3 Mar 2012 </br>11am-2pm</td>
+                <td>Sat,17 Mar 2012 </br>11am-2pm</td>
+            </tr>
+            <tr>
+                <td><b> Whitman at War</b></td>
+                <td>Sat, 7 Apr 2012<br>11am -1pm</td>
+                <td>Sat, 5 May 2012</br>11am - 1pm</td>
+                <td>Sat, 19 May 2012</br>11am - 1pm</td>
+            </tr>
+            <tr>
+                <td><b>Found Poems & Outsider Poetry</b></td>
+                <td>Sat, 9 Jun 2012<br>11am -2pm</td>
+                <td>Sat, 7 July 2012</br>11am - 2pm</td>
+                <td>Sat, 21 July 2012</br>11am - 2pm</td>
+            </tr>
+            <tr>
+                <td><b>Natural Death: An Exploration</b></td>
+                <td>Sat,4 Aug 2012<br>11am -4pm</td>
+                <td>Sat, 8 Sep 2012</br>11am - 4pm</td>
+                <td>Sat, 15 Sep 2012</br>11am - 4pm</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <form>
+        <fieldset>
+            <legend>Registred Your Intrest</legend>
+            <table id="interest">
+                <tr>
+                    <td><label for="fname">Your Name:</label></td>
+                    <td></td>
+                    <td><input type="text" class="fill" name="fname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="name">Your Email:</label></td>
+                    <td></td>
+                    <td><input type="email" class="fill" name="email" id="email"></td>
+                </tr>
+                <tr id="cities">
+                    <td><label for="center">Your Closest Center:</label></td>
+                    <td></td>
+
+                    <td>
+                        <select aria-valuetext="New York">
+                            
+                            <option value=" Chicago,"> Chicago</option>
+                            <option value="London">London</option>
+                            <option value="San Francisco">San Francisco</option>
+                            <option value="New York" selected>New York</option>
+                            <option value=" Hong Kong"> Hong Kong</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Are you a member?</td>
+                    <td></td>
+                    <td> <input type="radio" name="rem" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="rem" id="no">
+                        <label for="no">No</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+    </form>
+    <br>
+    <button type="submit" id="btn">Register</button>
+</body>
+
+</html>

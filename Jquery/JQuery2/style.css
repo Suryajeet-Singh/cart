@@ -1,0 +1,38 @@
+body{
+    background-color:wheat
+}
+div{
+    margin-top: 200px;
+}
+p{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+text-transform: uppercase;
+
+letter-spacing: 5px;
+}
+input[type="password"]{
+
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: rgb(238, 205, 143);
+    
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+input[type="text"]{
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border: transparent;
+    border-radius: 10px;
+    background-color: rgb(238, 205, 143);
+}
+#toggleButton{
+    font-family: 'Secular One', sans-serif;
+}

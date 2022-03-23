@@ -1,0 +1,31 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+span:active{
+    background-color: lightcoral;
+}
+
+p:first-child{
+    background-color: lightcoral;
+}
+h3:first-of-type
+{
+    background-color: navajowhite;
+}
+a:link {
+    color: green;
+  }
+
+  a:visited {
+    color: green;
+  }
+
+  a:hover {
+    color: red;
+  }
+  
+  a:active {
+    color: yellow;
+  }

@@ -1,0 +1,32 @@
+body{
+background-color: aqua;
+}
+div{
+    margin-top: 100px;
+    border: 1px solid black;
+    background-color: hotpink;
+    box-shadow: 10px 10px 5px grey;
+padding: 25px;
+margin-left:150px ;
+margin-right: 150px;
+
+}
+#para3{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: hotpink;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+   
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+#para3.show{
+    visibility: visible;
+
+}

@@ -1,0 +1,24 @@
+p::before
+{
+    font-weight: bold;
+    content:"Note :";
+}
+h4::after{
+    
+    content:" - Remember";
+}
+p::first-letter
+{
+    font-size: 100px;
+    color: cornflowerblue;
+}
+h1::first-line
+{
+    font-size: 50px;
+    color: orchid;
+}
+h4::first-line
+{
+    font-size: 40px;
+    color: rgb(141, 25, 12);
+}

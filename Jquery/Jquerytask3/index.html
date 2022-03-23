@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <form action="#" method="post" onsubmit="return validate()">
+
+            <h1>Please fill all the field</h1>
+            <div class="outer_div">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" placeholder="Enter your First Name">
+            </div>
+            <div class="err_div" id="err_first_name"></div>
+
+            <div class="outer_div">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" placeholder="Enter your Last Name">
+            </div>
+            <div class="err_div" id="err_last_name"></div>
+
+            <div class="outer_div">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email">
+            </div>
+            <div class="err_div" id="err_email"></div>
+
+            <div class="outer_div">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <div class="err_div" id="err_password"></div>
+
+            <div class="outer_div">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Enter your confirm password">
+            </div>
+            <div class="err_div" id="err_confirm_password"></div>
+
+
+            <div>
+                <input type="submit" value="Submit" id="register">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

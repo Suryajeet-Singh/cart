@@ -1,0 +1,56 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(student.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+ul{
+    top: 10px;
+    float: right;
+    list-style-type: none;
+    margin-right: 10px;
+}
+ul li{
+    display: inline;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 100px;
+    padding: 5px 40px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+.title{
+    position: absolute;
+    top:10%;
+    margin-left: 11%;
+
+}
+.title h1{
+    
+    text-align: center;
+    color: #fff;
+    font-size: 70px;
+    letter-spacing: 1.8
+}
+.title h2{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.title p{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}

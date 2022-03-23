@@ -1,0 +1,26 @@
+span{
+    color: seashell;
+    background-color: sienna;
+}
+:not(span){
+    color:rgb(206, 103, 12);
+    
+}
+p:nth-child(2){
+    color:powderblue;
+    background-color: mediumvioletred;
+}
+p:last-child
+{
+    color: rgb(61, 4, 119);
+    background-color: white;
+
+}
+p:nth-last-of-type(2) {
+    color: white;
+    background: red;
+  }
+  p:nth-of-type(3) {
+    color: white;
+    background: rgb(3, 102, 64);
+  }

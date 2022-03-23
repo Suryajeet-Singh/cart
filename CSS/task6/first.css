@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+#headerDiv
+{
+
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/student.jpg);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#logoImg
+{
+height: 80px;
+width: 100px;
+}
+
+ul{
+    margin-left: 20px;
+    list-style-type: none;
+    float: left;
+    
+}
+li{
+    display: inline;
+}
+a
+{
+ 
+    font-weight: bold;
+    color: #fff;
+    padding: 5px 40px;
+    text-decoration: none;
+    margin-right: 30px;
+    border: 1px solid transparent;
+    transition: 0.4s ease;
+}
+a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+#featureDiv 
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content:space-around;
+  }
+#featureDiv img
+{
+height: 60px;
+width: 60px;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+}
+#contentBody
+{
+    margin-bottom: 20px;
+}
+h3
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 3em;
+}
+p
+{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#bottomDiv
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#bottomDiv img
+{
+    height: 200px;
+    width: 49%;
+}
+
+
+@media screen and (max-width:800px) {
+    #headerDiv{
+        width: 100%;
+    }
+    #logoImg
+    {
+        margin-left:5%;
+    }
+
+}

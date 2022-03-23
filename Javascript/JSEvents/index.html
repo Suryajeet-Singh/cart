@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JSEvents</title>
+</head>
+
+<body onload="myfunction2()" onresize="myfunction3()">
+    <div>
+        <center>
+        <p id="para"></p>
+        <p>Select new Location from the list</p>
+        <select id="mySelect" onchange="myfunction1()">
+            <option value="Lucknow">Lucknow</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Varansi">Varansi</option>
+            <option value="Prayagraj">Prayagraj</option>
+        </select>
+        <p id="para1"></p>
+        Enter some text to convert in to Uppercase
+        <input type="text" id="texts" onblur="myfunction4()"><br>
+        Enter some Text to change background
+        <input type="text" id="text2" onfocus="myfunction5(this)"><br>
+        place cursor inside the box and press on the key up
+        <input type="text" id="text3" onkeyup="myfunction6()"><br>
+        place cursor inside the box and press on the key press
+        <input type="text" id="text4" onkeypress="myfunction7()"><br>
+        Enter some text to see with key down
+        <input type="text" id="text5" onkeydown="myfunction8()"><br>
+        <p ondblclick="myfunction9()">Enter double click on the text</p>
+        <p id="para2"></p>
+        <input type="button" value="click me" onclick="myfunction10()">
+        <div id="para3">This is the onclick events</div>
+        <br>
+        <form onsubmit="" action="test.html">
+            <button type="submit">Submit</button>
+        </form>
+        <script src="script.js"></script>
+    </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Methods</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Using filter() method</h1>
+    <p>This is First Paragraph!</p>
+    <p class="first_method">This is Third Paragraph!</p>
+    <p class="first_method">This is Third Paragraph!</p>
+    <p>This is Fourth Paragraph!</p>
+    <h1>Using not() method</h1>
+    <h2>This is First Paragraph!</h2>
+    <h2 class="second_method">This is Third Paragraph!</h2>
+    <h2 class="second_method">This is Third Paragraph!</h2>
+    <h2>This is Fourth Paragraph!</h2>
+    <h1>Using has() method</h1>
+    <p>This is <span>First</span> Paragraph!</p>
+    <p>This is Third Paragraph!</p>
+    <p>This is <span>Third</span> Paragraph!</p>
+    <p>This is Fourth Paragraph!</p>
+    <h1>Using slice() & eq() methods</h1>
+    <h3>This is First Paragraph!(index 0)</h3>
+    <h3>This is Third Paragraph!(index 1)</h3>
+    <h3>This is Third Paragraph!(index 2)</h3>
+    <h3>This is Fourth Paragraph!(index 3)</h3>
+    <h1>Using first() & last() methods</h1>
+    <div style="border:1px solid black">
+        <p>This is a paragraph in a div.</p>
+        <p>This is a paragraph in a div.</p>
+    </div><br>
+    <div style="border:1px solid black">
+        <p>This is a paragraph in another div.</p>
+        <p>This is a paragraph in another div.</p>
+    </div>
+    
+    <script>
+        $(document).ready(function () {
+            $("p").filter(".first_method").css("background-color", "yellow");
+            $("h2").not(".second_method").css("background-color", "red");
+            $("p").has("span").css("background-color", "green");
+            $("h3").slice(2).css("background-color", "blue");
+            $("h3").eq(1).css("background-color", "purple");
+            $("div p").last().css("background-color", "cyan");
+            $("div p").first().css("background-color", "yellow");
+        });
+    </script>
+</body>
+
+</html>
